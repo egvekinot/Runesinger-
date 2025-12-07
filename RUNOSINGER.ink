@@ -1052,8 +1052,7 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 1
-~los_head =
-"Голову создам из камня,"
+~los_head = "Голову создам из камня,"
 -> roga
 
 = head_leaver
@@ -1705,6 +1704,7 @@ VAR los_meh = ""
 ===END1===
 #Location: Титры
 В этом приключении Элиас собрал {songs_in_sunduk} рун из 15 возможных. ->END
+
 
 
 
