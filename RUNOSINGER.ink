@@ -152,7 +152,7 @@ VAR los_meh = ""
 -> next_step
 * [А может твой отец прав?] 
 ~Hitty = Hitty-1
-Хитти обмженно пожимает плечами.
+Хитти обиженно пожимает плечами.
 -> next_step
 = next_step
 #Location: Лес
@@ -229,7 +229,7 @@ VAR los_meh = ""
 +[Интересная история. Спасибо, Хитти]
 ~Hitty = Hitty+1
 ->Song_of_the_boat
-+[Да ты это все выдумал]
++[Да ты это все выдумал!]
 ~Hitty = Hitty-1
 ->Song_of_the_boat
 === Song_of_the_boat ===
@@ -1638,6 +1638,7 @@ VAR los_meh = ""
 ===END1===
 #Location: Титры
 В этом приключении Элиас собрал {songs_in_sunduk} рун из 15 возможных. ->END
+
 
 
 
