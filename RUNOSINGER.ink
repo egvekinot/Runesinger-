@@ -1102,7 +1102,8 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 2
-~los_head ="Голову из пня создам я"
+~Creature=Creature+1
+~los_head ="Голову из пня создам я,"
 -> roga
 
 = brevno
@@ -1128,7 +1129,7 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 1
-~los_head = "Голову создам из камня"
+~los_head = "Голову создам из камня,"
 -> roga
 
 = head_leaver
@@ -1178,7 +1179,7 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 1
-~los_roga ="для рогов тростник я выбрал"
+~los_roga ="для рогов тростник я выбрал,"
 -> legs
 
 = ivivye_vetvi
@@ -1192,7 +1193,8 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 2
-~los_roga ="для рогов возьму я иву"
+~Creature =Creature+1
+~los_roga ="для рогов возьму я иву,"
 -> legs
 
 = roga_leaver
@@ -1231,7 +1233,7 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 1
-~los_nogi ="вместо ног - прямые жерди"
+~los_nogi ="вместо ног - прямые жерди,"
 -> spina
 
 = trostnik1
@@ -1245,7 +1247,8 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 2
-~los_nogi ="вместо ног - тростник прибрежный"
+~Creature =Creature+1
+~los_nogi ="вместо ног - тростник прибрежный,"
 -> spina
 
 = ivivye_vetvi1
@@ -1296,7 +1299,8 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 2
-~los_spina ="из жердей - спина у лося"
+~Creature =Creature+1
+~los_spina ="из жердей - спина у лося,"
 -> scura
 
 = ivivye_vetvi2
@@ -1322,7 +1326,7 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 1
-~los_spina ="из бревна - спина у лося"
+~los_spina ="из бревна - спина у лося,"
 -> scura
 
 = spina_leaver
@@ -1360,7 +1364,8 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 2
-~los_meh ="вместо шкуры мох я сделал"
+~Creature =Creature+1
+~los_meh ="вместо шкуры мох я сделал,"
 -> losinost1
 
 = sosnovaya_cora
@@ -1374,7 +1379,7 @@ VAR los_meh = ""
 + [то что нужно!]
 ~ Time = Time - 1
 ~ losinost = losinost + 1
-~los_meh ="из коры сосновой - шкура"
+~los_meh ="из коры сосновой - шкура,"
 -> losinost1
 
 = trostnik2
@@ -1395,7 +1400,7 @@ VAR los_meh = ""
 
 = losinost1
 //Вроде бы, все готово...
-Элиас: (поет) Я создам большого лося, чтобы жил в лесу дремучем {los_head}, {los_roga}, {los_nogi}, {los_spina}, {los_meh} #П
+Элиас: (поет) Я создам большого лося, чтобы жил в лесу дремучем {los_head} {los_roga} {los_nogi} {los_spina} {los_meh} #П
 Элиас: (поет) Благородный лось мой ожил, Мчится лось дремучим лесом, Мчится по болотным топям, По камням, покрытым мхами! Прямо к кузнице волшебной, К дому Илмари несется.  #П
 {losinost >1:
 Не успевают отзвучать последние слова песни, как все части собираются воедино. Лось оживает, шевелится, затем немного неуверенно поднимается на ноги.
@@ -1474,14 +1479,7 @@ VAR los_meh = ""
 === Final_chellenge ===
 #Location: Кузница
 //Тестовый блок
-/*
-Дипломатия {Diplamate}
-Лидерство{Lider}
-Креативность {Creature}
-Препятствия {Proxodenie_chellenges}
-Песен в сундуке {songs_in_sunduk}
-Лосиность {losinost}
-*/
+Дипломатия {Diplamate}, Лидерство{Lider}, Креативность {Creature}, Препятствия {Proxodenie_chellenges}, Песен в сундуке {songs_in_sunduk}, Лосиность {losinost}
 //~songs_in_sunduk=12
 
 Мы входите в дымную кузницу Илмаринена. Великий кузнец стоит у наковальни, его могучие руки держат огромный молот, который когда-то выковал небесный свод.
@@ -1780,6 +1778,7 @@ VAR los_meh = ""
 ===END1===
 #Location: Титры
 В этом приключении Элиас собрал {songs_in_sunduk} рун из 15 возможных. ->END
+
 
 
 
