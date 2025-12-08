@@ -32,7 +32,7 @@ VAR los_meh = ""
 ~ temp gift6_selected = false
 ~ temp gift7_selected = false
 ~ temp gift8_selected = false
-->Nachalo
+->Nachalo1
 #Location: Начало1
 Ты вступаешь в мир "Калевалы". Готов ли ты сразу отправиться в путешествие или сначала хочешь больше узнать об этом мире?
 +[Начать игру] ->Izba
@@ -1746,6 +1746,7 @@ VAR los_meh = ""
 ===END1===
 #Location: Титры
 В этом приключении Элиас собрал {songs_in_sunduk} рун из 15 возможных. ->END
+
 
 
 
